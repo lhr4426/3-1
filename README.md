@@ -1,2 +1,6 @@
 # 3-1
-3학년 1학기 공부내용 (실습코드) 정리
+
+### - 모바일컴퓨팅과응용 : MobileComputing
+### - 운영체제 : OperatingSystem
+### - 영상처리 : ImageProcessing
+### - 데이터베이스 : Database
