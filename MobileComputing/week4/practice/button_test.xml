@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible test btn 1">
+    </Button>
+
+    <Button
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible test btn 2">
+    </Button>
+
+    <Button
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible test btn 3">
+    </Button>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible test btn 4">
+    </Button>
+
+    <Button
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible test btn 5">
+    </Button>
+
+    <Button
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enable test btn 1">
+    </Button>
+
+    <Button
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enable test btn 2">
+    </Button>
+
+    <Button
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enable test btn 3">
+    </Button>
+
+    <Button
+        android:rotation="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rotation test btn">
+    </Button>
+
+
+</LinearLayout>

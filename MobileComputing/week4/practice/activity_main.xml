@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/androidBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안드로이드"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/iphoneBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이폰"
+        android:checked="false"/>
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="고양이" />
+
+        <RadioButton
+            android:id="@+id/dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>

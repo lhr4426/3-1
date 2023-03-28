@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3"
+                android:background="#BFC7ED">
+
+                <CheckBox
+                    android:id="@+id/check_idle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이들" />
+
+                <CheckBox
+                    android:id="@+id/check_seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="세븐틴" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="#6876D1">
+
+                <RadioGroup
+                    android:id="@+id/group_idle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/btn_miyeon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="미연"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_minnie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="민니"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_soyeon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="소연"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_yuqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="우기"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_shuhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="슈화"/>
+
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/group_seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/btn_seungkwan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="승관"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_dk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="도겸"/>
+
+
+                    <RadioButton
+                        android:id="@+id/btn_hoshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="호시"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#AAADE4"
+            >
+
+            <RadioGroup
+                android:id="@+id/group_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/btn_fitCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fitCenter"/>
+
+
+                <RadioButton
+                    android:id="@+id/btn_Matrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matrix"/>
+
+
+                <RadioButton
+                    android:id="@+id/btn_fitXY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fitXY"/>
+
+
+                <RadioButton
+                    android:id="@+id/btn_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="center"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8884ED"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
