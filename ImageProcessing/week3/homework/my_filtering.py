@@ -200,40 +200,40 @@ if __name__ == '__main__':
 
     # # --------------------------------------------------
 
-    # # 2D gaussian filtering 
+    # 2D gaussian filtering 
 
     # gaussian_mask_3x3_1 = my_mask('gaussian2D', (3, 3), sigma=1)
     # gaussian_mask_3x3_05 = my_mask('gaussian2D', (3, 3), sigma=0.5)
-    # gaussian_mask_3x5_1 = my_mask('gaussian2D', (3, 5), sigma=1)
-    # gaussian_mask_3x5_3 = my_mask('gaussian2D', (3, 5), sigma=3)
     # gaussian_mask_5x5_1 = my_mask('gaussian2D', (5, 5), sigma=1)
-    # gaussian_mask_5x5_01 = my_mask('gaussian2D', (5, 5), sigma=0.1)
+    # gaussian_mask_5x5_3 = my_mask('gaussian2D', (5, 5), sigma=3)
+    # gaussian_mask_7x7_1 = my_mask('gaussian2D', (7, 7), sigma=1)
+    # gaussian_mask_7x7_01 = my_mask('gaussian2D', (7, 7), sigma=0.1)
 
     # dst_3x3_1 = my_filtering(src, gaussian_mask_3x3_1)
     # dst_3x3_05 = my_filtering(src, gaussian_mask_3x3_05)
-    # dst_3x5_1 = my_filtering(src, gaussian_mask_3x5_1)
-    # dst_3x5_3 = my_filtering(src, gaussian_mask_3x5_3)
     # dst_5x5_1 = my_filtering(src, gaussian_mask_5x5_1)
-    # dst_5x5_01 = my_filtering(src, gaussian_mask_5x5_01)
+    # dst_5x5_3 = my_filtering(src, gaussian_mask_5x5_3)
+    # dst_7x7_1 = my_filtering(src, gaussian_mask_7x7_1)
+    # dst_7x7_01 = my_filtering(src, gaussian_mask_7x7_01)
 
     # cv2.imshow('original', src)
     # cv2.imshow('3x3, sigma = 1', dst_3x3_1)
     # cv2.imshow('3x3, sigma = 0.5', dst_3x3_05)
-    # cv2.imshow('3x5, sigma = 1', dst_3x5_1)
-    # cv2.imshow('3x5, sigma = 3', dst_3x5_3)
     # cv2.imshow('5x5, sigma = 1', dst_5x5_1)
-    # cv2.imshow('5x5, sigma = 0.1', dst_5x5_01)
+    # cv2.imshow('5x5, sigma = 3', dst_5x5_3)
+    # cv2.imshow('7x7, sigma = 1', dst_7x7_1)
+    # cv2.imshow('7x7, sigma = 0.1', dst_7x7_01)
 
     # --------------------------------------------------
 
-    # 1D gaussian filtering
+    # # 1D gaussian filtering
 
     # gaussian1d_mask_3_1 = my_mask('gaussian1D', 3, sigma=1)
-    # gaussian1d_mask_5_1 = my_mask('gaussian1D', 5, sigma=1)
     # gaussian1d_mask_3_05 = my_mask('gaussian1D', 3, sigma=0.5)
-    # gaussian1d_mask_5_01 = my_mask('gaussian1D', 5, sigma=0.1)
-    # gaussian1d_mask_3_3 = my_mask('gaussian1D', 3, sigma=3)
+    # gaussian1d_mask_5_1 = my_mask('gaussian1D', 5, sigma=1)
     # gaussian1d_mask_5_3 = my_mask('gaussian1D', 5, sigma=3)
+    # gaussian1d_mask_7_1 = my_mask('gaussian1D', 7, sigma=1)
+    # gaussian1d_mask_7_01 = my_mask('gaussian1D', 7, sigma=0.1)
 
     # dst_3x3_1 = my_filtering(src, gaussian1d_mask_3_1.T)
     # dst_3x3_1 = my_filtering(dst_3x3_1, gaussian1d_mask_3_1)
@@ -241,25 +241,25 @@ if __name__ == '__main__':
     # dst_3x3_05 = my_filtering(src, gaussian1d_mask_3_05.T)
     # dst_3x3_05 = my_filtering(dst_3x3_05, gaussian1d_mask_3_05)
 
-    # dst_3x5_1 = my_filtering(src, gaussian1d_mask_3_1.T)
-    # dst_3x5_1 = my_filtering(dst_3x5_1, gaussian1d_mask_5_1)
-
-    # dst_3x5_3 = my_filtering(src, gaussian1d_mask_3_3.T)
-    # dst_3x5_3 = my_filtering(dst_3x5_3, gaussian1d_mask_5_3)
-
     # dst_5x5_1 = my_filtering(src, gaussian1d_mask_5_1.T)
     # dst_5x5_1 = my_filtering(dst_5x5_1, gaussian1d_mask_5_1)
+
+    # dst_5x5_3 = my_filtering(src, gaussian1d_mask_5_3.T)
+    # dst_5x5_3 = my_filtering(dst_5x5_3, gaussian1d_mask_5_3)
+
+    # dst_7x7_1 = my_filtering(src, gaussian1d_mask_7_1.T)
+    # dst_7x7_1 = my_filtering(dst_7x7_1, gaussian1d_mask_7_1)
     
-    # dst_5x5_01 = my_filtering(src, gaussian1d_mask_5_01.T)
-    # dst_5x5_01 = my_filtering(dst_5x5_01, gaussian1d_mask_5_01)
+    # dst_7x7_01 = my_filtering(src, gaussian1d_mask_7_01.T)
+    # dst_7x7_01 = my_filtering(dst_7x7_01, gaussian1d_mask_7_01)
 
 
     # cv2.imshow('original', src)
     # cv2.imshow('3x3, sigma = 1', dst_3x3_1)
     # cv2.imshow('3x3, sigma = 0.5', dst_3x3_05)
-    # cv2.imshow('3x5, sigma = 1', dst_3x5_1)
-    # cv2.imshow('3x5, sigma = 3', dst_3x5_3)
     # cv2.imshow('5x5, sigma = 1', dst_5x5_1)
-    # cv2.imshow('5x5, sigma = 0.1', dst_5x5_01)
+    # cv2.imshow('5x5, sigma = 3', dst_5x5_3)
+    # cv2.imshow('7x7, sigma = 1', dst_7x7_1)
+    # cv2.imshow('7x7, sigma = 0.1', dst_7x7_01)
     cv2.waitKey()
     cv2.destroyAllWindows()
