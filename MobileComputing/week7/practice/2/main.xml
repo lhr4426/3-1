@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cat"
+        android:orderInCategory="100"
+        android:title="cat"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/dog"
+        android:orderInCategory="100"
+        android:title="dog"
+        app:showAsAction="never" />
+
+    <item android:title="SubMenu">
+        <menu>
+            <item android:title="sub1"/>
+            <item android:title="sub2"/>
+        </menu>
+
+    </item>
+
+    <group android:checkableBehavior="all">
+        <item
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+
+
+
+</menu>
