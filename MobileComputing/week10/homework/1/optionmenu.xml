@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_line"
+        android:title="Line"/>
+
+    <item
+        android:id="@+id/item_circle"
+        android:title="Circle"/>
+
+    <item
+        android:id="@+id/item_rect"
+        android:title="Rect"/>
+
+    <item
+        android:id="@+id/item_clear"
+        android:title="Clear"/>
+
+</menu>
